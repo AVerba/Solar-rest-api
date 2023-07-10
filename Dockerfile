@@ -2,7 +2,7 @@ FROM node
 
 WORKDIR /master
 
-COPY . .
+COPY . ./
 
 RUN npm install
 
