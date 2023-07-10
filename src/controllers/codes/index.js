@@ -1,7 +1,5 @@
-const getAllCodes = require("./getAllCodes");
-const getCodeById = require("./getCodeById");
+const getCodeByKey = require("./getCodeByKey");
 
 module.exports = {
-    getAllCodes,
-    getCodeById
+    getCodeByKey
 };
