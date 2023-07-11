@@ -5,6 +5,7 @@ require("dotenv").config();
 
 const codeRouter = require("./src/routes/api/zipcodes");
 const companyRouter = require("./src/routes/api/companies");
+const lidRouter = require("./src/routes/api/lids");
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use(express.static("public"));
 
 app.use('/api/zipcodes', codeRouter);
 app.use('/api/companies', companyRouter);
+app.use('/api/lids', lidRouter);
 
 app.use((req, res) => {
     res.status(404).json({message: "Not found"});
