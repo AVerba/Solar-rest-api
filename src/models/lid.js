@@ -2,6 +2,9 @@ const {Schema, model} = require("mongoose");
 
 
 const lidSchema = new Schema({
+    trusted_form_cert_id: {
+        type: String
+    },
     property_ownership: {
         type: String
     },
