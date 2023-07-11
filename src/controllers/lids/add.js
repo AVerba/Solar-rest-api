@@ -1,8 +1,8 @@
 const Lid = require('../../models/lid')
 
 const add = async (req, res) => {
-    const obj=JSON.parse(req.body)
-    const result = await Lid.create({...obj});
+
+    const result = await Lid.create({...req.body});
     res.status(201).json(result);
 }
 

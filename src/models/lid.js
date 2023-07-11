@@ -12,7 +12,7 @@ const lidSchema = new Schema({
         type: String
     },
     desiredETA: {
-        type: Date
+        type: String
     },
     zip: {
         type: String
